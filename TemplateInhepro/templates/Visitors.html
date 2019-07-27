@@ -1,0 +1,36 @@
+{% extends 'Base.html' %}
+<html>
+<head>
+    <title>Visitors Form</title>
+</head>
+<body>
+{% block content %}
+    <h8> Visitors list... </h8><br>
+    <h7 class="text-center">Visitors Details</h7>
+    {% if data %}
+    <table class="table table-bordered text-center">
+        <thead>
+        <tr class="text-center">
+            <th>Emp Name</th>
+            <th>Emp Location</th>
+            <th>Emp Salary</th>
+            <th>Emp Email</th>
+        </tr>
+        </thead>
+        {% for i in data %}
+        <tbody>
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.location}}</td>
+            <td>{{i.salary}}</td>
+            <td>{{i.email}}</td>
+        </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+{% else %}
+<h6> Data is Not Available</h6>
+{% endif %}
+{% endblock %}
+</body>
+</html>

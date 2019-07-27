@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Durga Soft</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    ul{ list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: black;}
+    li{float: left;}
+    li.abc{float: right}
+    li a{display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
+    li a:hover:not(.active){background-color: deeppink; color: white;}
+    .active{background-color: gray;}
+    .footer{ position: fixed; left: 0; bottom: 0; width: 100%; background-color: black; color: white; text-align: center;}
+    h1{font-family: "Cooper Black"; text-shadow: lawngreen 3px 2px 2px; font-size: 40px; color: black}
+    h2{font-family: "Rage Italic"; color: red; margin-top: -15px;}
+</style>
+<body>
+<ul>
+    <li><a class="active" href="/Home/">Home</a></li>
+    <li><a href="/Register/">Register</a></li>
+    <li><a href="/Visitors/">Visitors</a></li>
+    <li><a href="/Feedback/">Feedback</a></li>
+    <li class="abc"><a href="/setting/">Setting</a></li>
+</ul>
+<center><h1>Welcome To Akola</h1></center>
+<center><h2>The Hottest City In The World...</h2></center>
+{% block content %}
+{% endblock %}
+<footer class="footer">
+    <h3>Thank You All</h3>
+</footer>
+</body>
+</html>

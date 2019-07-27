@@ -1,0 +1,25 @@
+{% extends 'Base.html' %}
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+{% block content %}
+    <div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h5 class="text-center">Enter Your Details</h5>
+            <form method="post">
+                {% csrf_token %}
+                {{abcd}}
+                <center>
+                    <input type="submit" value="Submit" class="btn btn-success">
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+{#    <h3>It is a Contact Page</h3>#}
+{% endblock %}
+</body>
+</html>
